@@ -318,7 +318,7 @@ class Board
                 window.alert("path finished");
                 clearInterval(s);
             }
-        }, 300);
+        }, 100);
     }
 
     clear(entireBoard = false)
@@ -360,6 +360,7 @@ class Board
                 });
                 break;
             case "replay":
+                element.classList.remove("inactive");
                 element.addEventListener("click", ()=>
                 {
                     this.playback(other);

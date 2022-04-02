@@ -27,6 +27,11 @@ header > div:hover, .active {
     cursor: pointer;
     background-color: rgb(85, 9, 238);
 }
+.inactive, .inactive:hover {
+    cursor: not-allowed;
+    color: #999898;
+    background: none;
+}
 #board {
     padding: 2px;
     background-color: grey;
